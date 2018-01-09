@@ -1,0 +1,40 @@
+repo: 'using-a-type-system'
+canvasCourse: 'web-dev-2'
+
+inherit:
+  - naming-restrict-live
+  - git-2
+  - html
+  - css
+  - responsive-css
+  - img-flex
+  - border-box
+  - screenshots-all
+  - typografier
+  - css-order-type-main
+
+html:
+  - path: 'index.html'
+    has:
+      - 'article > img + div > h1 + p + p + footer > p > a[href*="wikipedia.org"]'
+      - '.micro.text-center'
+      - '.card.max-length'
+      - '.island'
+      - '.zetta'
+      - '.mega.italic'
+      - '.push-0'
+    search:
+      - 'Glyptodon'
+      - 'Glyptodon was a large, armored mammal, a relative of armadillos, that lived during the Pleistocene epoch. It was roughly the same size and weight as a Volkswagen Beetle, though flatter in shape.'
+      - 'With its rounded, bony shell and squat limbs, it superficially resembled turtles, and the much earlier dinosaurian ankylosaur, as an example of the convergent evolution of unrelated lineages into similar forms.'
+      - 'Information from Wikipedia'
+      - 'https://en.wikipedia.org/wiki/Glyptodon'
+
+css:
+  - path: 'css/main.css'
+    has:
+      - ['html', 'font-family', 'Georgia, serif']
+      - ['a', 'color', 'currentColor']
+      - ['.card', 'overflow', 'hidden']
+      - ['.card', 'background-color', '#d9ccaa']
+      - ['.card', 'border-radius', '6px']
